@@ -90,7 +90,7 @@ function createPrompt(file: File, chunk: Chunk, prDetails: PRDetails): string {
 - Always propose the code to resolve given issue found by you.
 
 Always use following ESlint rules:
-${readFileSync('rules.txt', 'utf8')}
+${readFileSync('./rules.txt', 'utf8')}
 
 Review the following code diff in the file "${file.to
     }" and take the pull request title and description into account when writing the response.
