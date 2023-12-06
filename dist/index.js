@@ -117,7 +117,15 @@ function createPrompt(file, chunk, prDetails) {
 - Always propose the code to resolve given issue found by you.
 
 Always use following ESlint rules:
-${(0, fs_1.readFileSync)('./rules.txt', 'utf8')}
+
+"rules": {
+  "react/react-in-jsx-scope": "off",
+  "camelcase": "error",
+  "spaced-comment": "error",
+  "quotes": ["error", "single"],
+  "no-duplicate-imports": "error"
+}
+
 
 Review the following code diff in the file "${file.to}" and take the pull request title and description into account when writing the response.
 
