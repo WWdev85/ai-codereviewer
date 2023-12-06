@@ -6,7 +6,7 @@
   "author": "Ville Saukkonen",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && copy src\\rules.txt dist\\",
     "package": "ncc build --source-map --license licenses.txt",
     "format": "prettier --write .",
     "lint": "prettier --check ."
